@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,700;1,500&family=Merriweather:ital@1&family=Montserrat:wght@100;400;900&family=Nunito:ital,wght@0,700;1,400&family=Sacramento&family=Ubuntu:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #10192c;
+  color: #00ffff;
+  height: 100vh;
+}
+
+.form {
+  padding: 2rem;
+  border-radius: 0.7rem;
+  width: 400px;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+    2px 2px 5px rgba(94, 104, 121, 0.3);
+}
+
+.form h2 {
+  font-size: 35px;
+  margin-bottom: 1.5rem;
+}
+
+.form-field {
+  margin-bottom: 0.7rem;
+  position: relative;
+}
+.form-field input {
+  margin: 0.3rem 0;
+  padding: 0.7rem;
+  padding-left: 3rem;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: #dadfe9;
+  box-shadow: inset 2px 2px 5px rgba(94, 104, 121, 0.3),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.form-field input:focus {
+  box-shadow: inset 1px 1px 2px rgb(234, 236, 242),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.form-field .input-field {
+  position: relative;
+}
+
+.form-field .bi-person-badge,
+.form-field .bi-envelope-at,
+.form-field .bi-eye-slash-fill,
+.form-field .bi-eye-fill {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  /* bottom: 18px; */
+  transform: translateY(-50%);
+  color: rgb(72, 72, 72);
+}
+
+.form-field .bi-exclamation-octagon,
+.form-field .bi-check-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.form-field .bi-eye-slash-fill,
+.form-field .bi-eye-fill {
+  cursor: pointer;
+}
+
+.bi-eye-fill {
+  display: none;
+}
+
+.input-field.visible .bi-eye-fill {
+  display: inline-block;
+  color: rgb(44, 44, 44);
+}
+
+.input-field.visible .bi-eye-slash-fill {
+  display: none;
+}
+
+.form-field.success .bi-check-circle {
+  display: inline-block;
+  color: rgb(0, 155, 0);
+}
+.form-field.error .bi-exclamation-octagon {
+  display: inline-block;
+  color: #ff0909;
+}
+
+.form-field .error-message {
+  font-size: 0.8rem;
+  color:  #ff0909;
+  display: none;
+}
+
+.form-field.error .error-message {
+    display: inline-block;
+}
+
+.form .submit {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.15px;
+  background: #0f8b94;
+  color: #f9f9f9;
+  box-shadow: 3px 3px 8px #d1d9e6, -3px -3px 16px #f9f9f9;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer{
+    padding-top: 10px;
+}
